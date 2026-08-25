@@ -127,11 +127,11 @@
 }
 
 @utility reveal-img {
-  clip-path: inset(0 0 100% 0);
+  clip-path: inset(0 0 100% 0 round var(--radius-4xl));
   transition: clip-path 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 
   &[data-visible="true"] {
-    clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0 round var(--radius-4xl));
   }
 }
 
