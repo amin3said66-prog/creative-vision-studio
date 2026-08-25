@@ -10,7 +10,7 @@ import { Contact, Footer } from "@/components/site/Contact";
 
 const title = "Mostafa Samir — Full Stack Engineer for Real Estate Platforms";
 const description =
-  "Senior full stack engineer building property marketplaces, multi-tenant brokerage systems and real-time property dashboards with .NET 8, Angular and Next.js.";
+  "Senior full stack engineer building property listing portals, multi-tenant brokerage systems and real-time property dashboards with .NET 8, Angular and Next.js.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -1,7 +1,7 @@
 import { Reveal } from "./Reveal";
 
 const stats = [
-  { value: "4+", label: "Years shipping production platforms" },
+  { value: "4+", label: "Years shipping real-estate platforms" },
   { value: "300%", label: "Query throughput gained on listing search" },
   { value: "1,000+", label: "IoT endpoints streamed in real time" },
   { value: "Multi-tenant", label: "Brokerage-grade data isolation & RBAC" },

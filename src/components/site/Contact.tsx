@@ -20,7 +20,7 @@ export function Contact() {
                 Have a property platform to build or rescue?
               </h2>
               <p className="mt-5 leading-relaxed text-primary-foreground/70">
-                Marketplaces, brokerage back-offices, smart-building dashboards or a
+                Property portals, brokerage back-offices, smart-building dashboards or a
                 listings frontend that needs to load in under a second — tell me the
                 problem and I'll map the architecture.
               </p>

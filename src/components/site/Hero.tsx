@@ -21,7 +21,7 @@ export function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
             I'm Mostafa Samir — a senior full stack engineer with 4+ years building
-            listing marketplaces, multi-tenant brokerage platforms and real-time
+            property listing portals, multi-tenant brokerage platforms and real-time
             property intelligence on .NET 8 microservices and modern frontends.
           </p>
         </Reveal>

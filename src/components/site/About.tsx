@@ -35,7 +35,7 @@ export function About() {
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Over 4+ years I've moved teams from monoliths to .NET 8 microservices, made
-            platforms multi-tenant without leaking a row, and shipped buyer-facing
+            platforms multi-tenant without leaking a row, and shipped home-buyer-facing
             frontends that rank and convert.
           </p>
 

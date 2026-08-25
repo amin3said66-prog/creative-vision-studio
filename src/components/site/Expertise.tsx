@@ -17,7 +17,7 @@ const pillars = [
     items: ["SignalR realtime", "IoT telemetry ingestion", "Angular data visualisation"],
   },
   {
-    title: "Buyer-facing experiences",
+    title: "Home-buyer experiences",
     body: "SEO-first Next.js listing sites and PWAs engineered around web vitals and mobile conversion.",
     items: ["Next.js / React / Redux", "TypeScript & Tailwind CSS", "Playwright & Cypress coverage"],
   },
