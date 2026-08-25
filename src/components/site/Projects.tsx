@@ -1,5 +1,5 @@
 import { useState } from "react";
-import marketplaceImg from "@/assets/project-marketplace.jpg";
+import listingsImg from "@/assets/project-listings.jpg";
 import iotImg from "@/assets/project-iot.jpg";
 import crmImg from "@/assets/project-crm.jpg";
 import pwaImg from "@/assets/project-pwa.jpg";
@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 type Project = {
   title: string;
-  category: "Marketplace" | "Operations" | "Client Experience";
+  category: "Listings & Search" | "Brokerage Operations" | "Buyer Experience";
   image: string;
   summary: string;
   specs: { label: string; value: string }[];
@@ -17,21 +17,21 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Property Marketplace Engine",
-    category: "Marketplace",
-    image: marketplaceImg,
+    title: "MLS-Grade Property Listing Engine",
+    category: "Listings & Search",
+    image: listingsImg,
     summary:
-      "Modular listing marketplace backend on .NET 8 microservices — search, offers, agent commissions and escrow-ready payment flows, built with Repository Pattern and Unit of Work.",
+      "Property listing and search backend on .NET 8 microservices — MLS-style feed ingestion, geo and faceted search, viewing requests, offers, agent commissions and escrow-ready closing payments, built with Repository Pattern and Unit of Work.",
     specs: [
       { label: "Services", value: "9 bounded contexts" },
-      { label: "Search", value: "Redis-cached, faceted" },
+      { label: "Search", value: "Geo + faceted, Redis-cached" },
       { label: "Uptime", value: "Zero-downtime deploys" },
     ],
     stack: [".NET 8", "DDD", "PostgreSQL", "Redis", "gRPC"],
   },
   {
     title: "Real-Time Property & IoT Dashboard",
-    category: "Operations",
+    category: "Brokerage Operations",
     image: iotImg,
     summary:
       "Full-stack operations dashboard tracking building sensors, site logistics and unit handover status live across 1,000+ endpoints with SignalR streaming and telemetry rollups.",
@@ -44,7 +44,7 @@ const projects: Project[] = [
   },
   {
     title: "Multi-Tenant Brokerage CRM/ERP Sync",
-    category: "Operations",
+    category: "Brokerage Operations",
     image: crmImg,
     summary:
       "Synchronization layer between brokerage CRM leads and back-office ERP: tenant-isolated pipelines, hierarchical RBAC per branch and consistent large-scale data transfer.",
@@ -57,7 +57,7 @@ const projects: Project[] = [
   },
   {
     title: "Listings PWA & Web Vitals",
-    category: "Client Experience",
+    category: "Buyer Experience",
     image: pwaImg,
     summary:
       "SEO-first property browsing experience in Next.js: server-rendered listing pages, image pipelines, saved-search PWA offline mode and near-perfect Core Web Vitals.",
@@ -70,7 +70,12 @@ const projects: Project[] = [
   },
 ];
 
-const filters = ["All", "Marketplace", "Operations", "Client Experience"] as const;
+const filters = [
+  "All",
+  "Listings & Search",
+  "Brokerage Operations",
+  "Buyer Experience",
+] as const;
 
 export function Projects() {
   const [active, setActive] = useState<(typeof filters)[number]>("All");

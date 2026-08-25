@@ -7,7 +7,7 @@ const roles = [
     period: "Jul 2024 — Present",
     place: "Tanta, Egypt",
     points: [
-      "Architected scalable .NET 8 microservices with Clean Architecture and DDD powering enterprise marketplace workflows.",
+      "Architected scalable .NET 8 microservices with Clean Architecture and DDD powering enterprise property listing and brokerage workflows.",
       "Led the move to multi-tenant architecture with secure data isolation and hierarchical role-based access control.",
       "Engineered real-time telemetry and integration layers with SignalR across 1,000+ IoT endpoints.",
       "Automated CI/CD with Azure DevOps and TFS, cutting deployment cycles and protecting configuration baselines.",
@@ -20,7 +20,7 @@ const roles = [
     period: "Nov 2023 — Jul 2024",
     place: "Cairo, Egypt",
     points: [
-      "Delivered end-to-end web apps with Next.js and React for SEO-friendly marketplace frontends, backed by .NET Core APIs.",
+      "Delivered end-to-end web apps with Next.js and React for SEO-friendly property listing frontends, backed by .NET Core APIs.",
       "Integrated third-party payment, auth and mapping APIs to extend property platform capabilities.",
       "Containerized legacy services with Docker to streamline environments and cloud migration.",
     ],
